@@ -1,0 +1,33 @@
+{
+    "name": "Magic The Gathering Card Search",
+    "description": "",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+        "16": "/assets/mtg.png"
+    },
+    "host_permissions": [
+        "https://www.tcgplayer.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "commands": {
+        "open-mtgcs": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Y"
+            },
+            "description": "Open the card search box"
+        }
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "action": {
+        "default_icon": {
+            "16": "/assets/mtg.png"
+        },
+        "default_title": "Search for card",
+        "default_popup": "search.html"
+    }
+}
